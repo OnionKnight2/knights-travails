@@ -50,11 +50,11 @@ module Chess
       path = []
       current = self
       while current
-        path.push(current.position)
+        path.unshift(current.position)
         current = current.parent
       end
       
-      path.reverse
+      path
     end
   end
 end
